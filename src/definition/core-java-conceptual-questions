@@ -1,0 +1,175 @@
+Please answer the below core-java Questions:
+
+
+What jdk contains or composed of and define each components?
+Answer:
+Java development kit (JDK) is a software development environment used for developing Java applications.
+JDK includes the Java Runtime Environment, an interpreter/loader (java), a compiler (javac), an archiver, a documentation generator (javadoc) and other tools needed in Java development.
+
+What is IDE?
+Answer:
+An integrated development environment (IDE), some time called interactive development environment, provide a well build environment to write a code, compile a code, debug a code and run a code. An IDE consists of a source code editor, build automation tools and a debugger.
+
+What are the IDEs available in the market to support java?
+Answer:
+There are many IDEs in the market, but most popular ones: Eclipse, NetBeans, IntelliJ IDEA, JetBrains.Jcreator and etc.
+
+Explain the entire java life cycle.
+Answer:
+The Java application life cycle can be explained in this order. First, Java source code is created using any text editor in the form of text file. This file is saved as a .java file on the disk. We then compile this text file using the Java compiler, which result in a .class file being created on the disk. The .class file contains the bytecodes. The file is then loaded into memory by the class loader. The bytecode verifier confirms that the bytecodes are valid. Finally, the JVM reads the bytecodes in memory and translates them into machine code.
+
+what is class?
+Answer:
+A class is a blue print from which individual objects are created.
+
+What is object?
+Answer:
+An object is an instance of a class. Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behaviors -wagging, barking, eating.
+
+What is the entry point of an application?
+Answer:
+Java programs start executing at the main method, which has the following method heading:
+
+public static void main (String [] args) {
+…….
+}
+
+Why main is static?
+Answer:
+Since main method is static Java virtual Machine can call it without creating any instance of class which contains main method.
+If main method were not declared static than JVM has to create instance of main Class and since constructor can be overloaded and can have arguments there would not be any certain and consistent way for JVM to find main method in Java.
+
+What is the difference between an Interface and Abstract class?
+Answer:
+Main difference is methods of a Java interface are implicitly abstract and cannot have implementations. A Java abstract class can have instance methods that implements a default behavior.
+
+Can you make an Object from an Interface and Abstract class ? if not how do you use it?
+Answer:
+You cannot create an instance of an interface and even if we do so it would be of no use as none of the members in that class are implemented. Same is the case with the abstract class. This is because they are incomplete (i.e., they act as templates) and creation of an object is not meaningful for incomplete classes.
+
+what is Access Specifier?
+Answer:
+An access specifier is a defining code element that can determine which elements of a program are allowed to access a specific variable or other piece of data.
+
+What is OOP ? Define each feature of java OOP.
+Answer:
+OOP – object oriented programming. Its main features are:
+
+Inheritance - when one object acquires all the properties and behaviors of parent object i.e. known as inheritance. It provides code reusability.
+
+Polymorphism - when one task is performed by different ways i.e. known as polymorphism. For example: to convense the customer differently, to draw something e.g. shape or rectangle etc. In java, we use method overloading and method overriding to achieve polymorphism.
+
+Abstraction - hiding internal details and showing functionality is known as abstraction. 
+In java, we use abstract class and interface to achieve abstraction.
+
+Encapsulation - binding (or wrapping) code and data together into a single unit is known as encapsulation. For example: capsule, it is wrapped with different medicines.
+
+What is API?
+Answer:
+Application program interface (API) is a set of routines, protocols, and tools for building software applications. The API specifies how software components should interact and are used when programming graphical user interface (GUI) components.
+
+Does java support multiple inheritance?
+Answer:
+No, Java does not support multiple inheritance. It is just to remove ambiguity, because multiple inheritance can cause ambiguity in few scenarios.
+
+What is method overloading and when it happens?
+Answer:
+Method overloading in Java occurs when two or more methods in the same class have the exact same name but different parameters (remember that method parameters accept values passed into the method).
+
+What is method overriding and when it happens?
+Answer:
+Overriding methods is completely different from overloading methods. If a derived class requires a different definition for an inherited method, then that method can be redefined in the derived class. This would be considered overriding. An overridden method would have the exact same method name, return type, number of parameters, and types of parameters as the method in the parent class, and the only difference would be the definition of the method.
+
+Explain exceptions in java and how to handle it.
+Answer:
+An exception is a problem that arises during the execution of a program. An exception can occur for many different reasons, including the following:
+- A user has entered invalid data.
+- A file that needs to be opened cannot be found.
+- A network connection has been lost in the middle of communications or the JVM has run out of memory.
+
+To understand how exception handling works in Java, we need to understand the three categories of exceptions:
+- Checked exceptions: A checked exception is an exception that is typically a user error or a problem that cannot be foreseen by the programmer. For example, if a file is to be opened, but the file cannot be found, an exception occurs. These exceptions cannot simply be ignored at the time of compilation.
+- Runtime exceptions: A runtime exception is an exception that occurs that probably could have been avoided by the programmer. As opposed to checked exceptions, runtime exceptions are ignored at the time of compilation.
+- Errors: These are not exceptions at all, but problems that arise beyond the control of the user or the programmer. Errors are typically ignored in your code because you can rarely do anything about an error. For example, if a stack overflow occurs, an error will arise. They are also ignored at the time of compilation.
+
+What is static keyword in java? How it has been used in variables and methods?
+Answer:
+The static keyword is used in java mainly for memory management. We may apply static keyword with variables, methods, blocks and nested class. The static keyword belongs to the class than instance of the class.
+
+What is final and how it has been used variables and methods?
+Answer:
+We use final keyword to variables to make its values not to be changed. But i see that you can change the value in the constructor/methods of the class.
+
+What is final, finally and finalize?
+Answer:
+final:
+final is a keyword. The variable decleared as final should be
+initialized only once and cannot be changed. Java classes
+declared as final cannot be extended. Methods declared as final
+cannot be overridden.
+
+finally:
+finally is a block. The finally block always executes when the
+try block exits. This ensures that the finally block is executed
+even if an unexpected exception occurs. But finally is useful for
+more than just exception handling - it allows the programmer to
+avoid having cleanup code accidentally bypassed by a return,
+continue, or break. Putting cleanup code in a finally block is
+always a good practice, even when no exceptions are anticipated.
+
+finalize:
+finalize is a method. Before an object is garbage collected, the
+runtime system calls its finalize() method. You can write system
+resources release code in finalize() method before getting garbage
+collected.
+
+What is a constructor ?
+Answer:
+A constructor in Java is a block of code similar to a method that’s called when an instance of an object is created. Here are the key differences between a constructor and a method:
+- A constructor doesn’t have a return type.
+- The name of the constructor must be the same as the name of the class.
+- Unlike methods, constructors are not considered members of a class.
+- A constructor is called automatically when a new instance of an object is created.
+
+What is "this" keyword in java ?
+Answer:
+There can be a lot of usage of this keyword. In java, this is a reference variable that refers to the current object. Here is given the 6 usage of this keyword.
+1. this keyword can be used to refer current class instance variable.
+2. this() can be used to invoke current class constructor.
+3. this keyword can be used to invoke current class method (implicitly)
+4. this can be passed as an argument in the method call.
+5. this can be passed as argument in the constructor call.
+6. this keyword can also be used to return the current class instance.
+
+What is JVM stand for ?
+Answer:
+JVM - Java virtual machine.
+
+What version of java are you using?
+Answer:
+Java SE 7.
+
+What is JAR stand for ?
+Answer:
+JAR (Java archive) is a package file format typically used to aggregate many Java class files and associated metadata and resources
+
+What is compile time and run time?
+Answer:
+Runtime and compile time are programming terms that refer to different stages of software program development. In order to create a program, a developer first writes source code, which defines how the program will function. Small programs may only contain a few hundred lines of source code, while large programs may contain hundreds of thousands of lines of source code. The source code must be compiled into machine code in order to become and executable program. This compilation process is referred to as compile time.
+
+A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+
+The terms "runtime" and "compile time" are often used by programmers to refer to different types of errors. A compile time error is a problem such as a syntax error or missing file reference that prevents the program from successfully compiling. The compiler produces compile time errors and usually indicates what line of the source code is causing the problem.
+
+If a program's source code has already been compiled into an executable program, it may still have bugs that occur while the program is running. Examples include features that don't work, unexpected program behavior, or program crashes. These types of problems are called runtime errors since they occur at runtime.
+
+What is heap?
+Answer:
+The JVM has a heap that is the runtime data area from which memory for all class instances and arrays are allocated. It is created at the JVM start-up.
+
+How java manage its memory?
+Answer:
+In java, memory is managed via garbage collector. Garbage collector is responsible for:
+
+allocating memory ensuring that any referenced objects remain in memory, and
+recovering memory used by objects that are no longer reachable from references in executing code.

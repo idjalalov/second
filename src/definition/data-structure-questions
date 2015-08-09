@@ -1,0 +1,88 @@
+Please answer the below Data Structure Questions:
+
+1) why do we need data structure?
+answer:
+Use of appropriate data structure enables a computer system to perform its task more efficiently, by influencing the ability of computer to store and retrieve data from any location in its memory. Different kind of data structures are suited to different computer applications and tasks.
+
+2) List out the areas in which data structures are applied extensively?
+Answer:
+1. Compiler Design,
+2. Operating System,
+3. Database Management System,
+4. Statistical analysis package,
+5. Numerical Analysis,
+6. Graphics,
+7. Artificial Intelligence,
+8. Simulation
+
+3) what is an Array?
+Answer:
+An array refers to a set of numbers or objects that will follow a specific pattern. An array is an orderly arrangement, often in rows, columns or a matrix.
+
+4) what is the difference between the Array and ArrayList?
+Answer:
+Main difference between Array vs ArrayList inJava is static nature of Array and dynamic nature of ArrayList. Once created you can not change size of Array but ArrayList can re-size itself when needed.
+
+5) what is LinkedList?
+Answer:
+A linked list is a linear data structure where each element is a separate object. Each element (we will call it a node) of a list is comprising of two items - the data and a reference to the next node. The last node has a reference to null.
+
+6) what is queue?
+Answer:
+A Queue is a collection for holding elements prior to processing. Besides basic Collection operations, queues provide additional insertion, removal, and inspection operations.
+
+7) what is stack?
+Answer:
+A stack is a data structure used to store a collection of objects. Individual items can be added and stored in a stack using a push operation. Objects can be retrieved using a pop operation, which removes an item from the stack.
+
+8) what is FIFO and LIFO?
+Answer:
+A stack in which items are removed the top is considered a "LIFO" (Last In, First Out) stack. You can picture a LIFO stack as a deck of cards where you lay individual cards on the deck, then draw cards from the top. In a "FIFO" (First In, First Out) stack, items are removed the bottom.
+
+9) what is the order of complexity?
+Answer:
+
+10)what is the best case to search an element from an array?
+Answer:
+Match is found in first element (1 search operation).
+
+11)what is the worst case to search an element from an array?
+Answer:
+No match is found, or match is found in the last element (n search operations).
+
+12) what is tree in data structure?
+Answer:
+A tree is a widely-used data structure that emulates a hierarchical tree structure with a set of linked nodes.
+
+13) what is graph in data structure?
+Answer:
+A graph data structure consists of a finite (and possibly mutable) set of nodes or vertices, together with a set of ordered pairs of these nodes (or, in some cases, a set of unordered pairs).
+
+14) what is the difference between the HashTable and HashMap?
+Answer:
+HashMap is non synchronized and not thread safe.On the other hand, HashTable is thread safe and synchronized.
+
+15) What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Answer:
+1. RDBMS = Array (i.e. Array of structures)
+2. Network data model = Graph
+3. Hierarchical data model = Trees
+
+16) How HashMap works in java?
+Answer:
+HashMap works on principle of hashing, we have put(key, value) and get(key) method for storing and retrieving Objects from HashMap. When we pass Key and Value object to put() method on Java HashMap, HashMap implementation calls hashCode method on Key object and applies returned hashcode into its own hashing function to find a bucket location for storing Entry object, important point to mention is that HashMap in Java stores both key and value object as Map.Entry in bucket.
+
+17) What is Big-(O)-notation?
+Big O notation is used in Computer Science to describe the performance or complexity of an algorithm.
+
+18) Outlined different kind of sorting algorithm with time complexity?
+Answer:
+Insertion, buble, merge, quick, radix.
+
+19) Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+
+a)In terms of adding element.
+
+b)In terms of removing element.
+
+c)In terms of searching element.
