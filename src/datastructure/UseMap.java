@@ -16,35 +16,29 @@ public class UseMap {
 		 * 
 		 */
 
-		List<String> usa = new ArrayList<String>();
-		usa.add("New York");
-		usa.add("Denver");
-		usa.add("Phoenix");
-		usa.add("Jersey city");
-		usa.add("LA");
-		usa.add("San jose");
-		usa.add("SF");
-		usa.add("New Haven");
-		usa.add("Kansas");
-		usa.add("Georgia");
+		List<String> SpainTeams = new ArrayList<String>();
+		SpainTeams.add("Real Madrid");
+		SpainTeams.add("Barcelona");
+		SpainTeams.add("Benfica");
 		
-		List<String> uk = new ArrayList<String>();
-		uk.add("London");
-		uk.add("scotland");
-		uk.add("Iceland");
 		
-		List<String> canada = new ArrayList<String>();
-		canada.add("Torronto");
-		canada.add("Quebec");
-		canada.add("Alberta");
+		List<String> EnglandTeams = new ArrayList<String>();
+		EnglandTeams.add("Arsenal");
+		EnglandTeams.add("Chelsea");
+		EnglandTeams.add("Mancester United");
+		
+		List<String> ItalianTeams = new ArrayList<String>();
+		ItalianTeams.add("Milan");
+		ItalianTeams.add("Juventus");
+		ItalianTeams.add("Inter");
 		
 		
 		
 		Map<String, List<String>> country = new LinkedHashMap<String, List<String>>();
 		
-		country.put("USA", usa);
-		country.put("UK", uk);
-		country.put("CANADA", canada);
+		country.put("Spain", SpainTeams);
+		country.put("England", EnglandTeams);
+		country.put("Italy", ItalianTeams);
 		
 		for(Entry<String, List<String>> key:country.entrySet()){
 			
